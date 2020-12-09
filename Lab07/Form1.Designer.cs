@@ -46,9 +46,10 @@ namespace Lab07
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(49, 48);
+            this.label1.Location = new System.Drawing.Point(74, 74);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 24);
+            this.label1.Size = new System.Drawing.Size(150, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Змінна X1";
             // 
@@ -56,9 +57,10 @@ namespace Lab07
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(49, 84);
+            this.label2.Location = new System.Drawing.Point(74, 129);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 24);
+            this.label2.Size = new System.Drawing.Size(150, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Змінна X2";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -67,43 +69,49 @@ namespace Lab07
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(49, 189);
+            this.label3.Location = new System.Drawing.Point(74, 291);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(226, 24);
+            this.label3.Size = new System.Drawing.Size(334, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Результат розрахунку Y";
             // 
             // tbX0
             // 
             this.tbX0.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbX0.Location = new System.Drawing.Point(311, 48);
+            this.tbX0.Location = new System.Drawing.Point(466, 74);
+            this.tbX0.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbX0.Name = "tbX0";
-            this.tbX0.Size = new System.Drawing.Size(83, 23);
+            this.tbX0.Size = new System.Drawing.Size(122, 30);
             this.tbX0.TabIndex = 3;
+            this.tbX0.TextChanged += new System.EventHandler(this.tbX0_TextChanged);
             // 
             // tbX2
             // 
             this.tbX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbX2.Location = new System.Drawing.Point(311, 85);
+            this.tbX2.Location = new System.Drawing.Point(466, 131);
+            this.tbX2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbX2.Name = "tbX2";
-            this.tbX2.Size = new System.Drawing.Size(83, 23);
+            this.tbX2.Size = new System.Drawing.Size(122, 30);
             this.tbX2.TabIndex = 4;
             // 
             // tbY
             // 
             this.tbY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbY.Location = new System.Drawing.Point(311, 189);
+            this.tbY.Location = new System.Drawing.Point(466, 291);
+            this.tbY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbY.Name = "tbY";
             this.tbY.ReadOnly = true;
-            this.tbY.Size = new System.Drawing.Size(112, 23);
+            this.tbY.Size = new System.Drawing.Size(166, 30);
             this.tbY.TabIndex = 5;
             // 
             // btnCalculate
             // 
             this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCalculate.Location = new System.Drawing.Point(12, 282);
+            this.btnCalculate.Location = new System.Drawing.Point(18, 434);
+            this.btnCalculate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(130, 36);
+            this.btnCalculate.Size = new System.Drawing.Size(195, 55);
             this.btnCalculate.TabIndex = 6;
             this.btnCalculate.Text = "Обчислити";
             this.btnCalculate.UseVisualStyleBackColor = true;
@@ -112,9 +120,10 @@ namespace Lab07
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnClear.Location = new System.Drawing.Point(156, 282);
+            this.btnClear.Location = new System.Drawing.Point(234, 434);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(130, 36);
+            this.btnClear.Size = new System.Drawing.Size(195, 55);
             this.btnClear.TabIndex = 7;
             this.btnClear.Text = "Очистити";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -123,9 +132,10 @@ namespace Lab07
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnExit.Location = new System.Drawing.Point(293, 282);
+            this.btnExit.Location = new System.Drawing.Point(440, 434);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(130, 36);
+            this.btnExit.Size = new System.Drawing.Size(195, 55);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Вихід";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -135,26 +145,29 @@ namespace Lab07
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(49, 228);
+            this.label4.Location = new System.Drawing.Point(68, 349);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(246, 24);
+            this.label4.Size = new System.Drawing.Size(370, 32);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Менше із значень х1 та х2";
+            this.label4.Text = "Середнє значення х1 та х2";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txbAvr
             // 
             this.txbAvr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txbAvr.Location = new System.Drawing.Point(311, 228);
+            this.txbAvr.Location = new System.Drawing.Point(466, 351);
+            this.txbAvr.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txbAvr.Name = "txbAvr";
             this.txbAvr.ReadOnly = true;
-            this.txbAvr.Size = new System.Drawing.Size(112, 23);
+            this.txbAvr.Size = new System.Drawing.Size(166, 30);
             this.txbAvr.TabIndex = 10;
             // 
             // fMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 352);
+            this.ClientSize = new System.Drawing.Size(652, 542);
             this.Controls.Add(this.txbAvr);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExit);
@@ -166,6 +179,7 @@ namespace Lab07
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "fMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

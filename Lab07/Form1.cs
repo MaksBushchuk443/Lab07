@@ -31,19 +31,17 @@ namespace Lab07
         {
             if (string.IsNullOrEmpty(tbX0.Text) || (String.IsNullOrEmpty(tbX2.Text)))
             {
-                tbY.Text = "Не введеноданих!";
+                tbY.Text = "Не введено даних!";
                 return;
             }
             double x1 = double.Parse(tbX0.Text);
             double x2 = double.Parse(tbX2.Text);
-            double y = Math.Sqrt(56 * x1 * ( x1+ x2 + Math.Sin(x1 * x2)) / 5 - Math.Cos(Math.Pow(x2,2))  );
-            tbY.Text = y.ToString("0.###");
-            if (x2 == x1)
-                txbAvr.Text = "Значення рівні";
-            else if (x2 > x1)
-                txbAvr.Text = x1.ToString("0.###");
-            else
-                txbAvr.Text = x2.ToString("0.###");
+            double y = 23 * Math.Pow(Math.Cos(Math.Pow(x1, 3) * Math.Pow(x2, 5)), 2) + 2 * x1;
+            tbY.Text = y.ToString("0.####");
+
+            double s = (x1 + x2) / 2  ;
+            txbAvr.Text = s.ToString("0.####");
+            
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -57,6 +55,16 @@ namespace Lab07
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbX0_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
